@@ -9,8 +9,8 @@ const server = http.createServer((req, res) => {
     //El servidor responder un codigo 200
     res.statusCode = 200;
     //El servidor respondera con un texto plano
-    res.setHeader('Content-Type', 'text/plain');
-    //El servidor respondera el mensaje hola mundo
+    res.setHeader('Content-Type', 'text/html');
+    //El servidor respondera el mensaje hola mundo con html
     res.end('Hola Mundo, me llamo Isaac\n');
 });
 
