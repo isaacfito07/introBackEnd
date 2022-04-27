@@ -1,0 +1,22 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Primer uso del modulo http en node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacfito07/introduccionBakEnd.git"
+  },
+  "keywords": [
+    "HTTP"
+  ],
+  "author": "Fabian Isaac Talamantes Orrantia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaacfito07/introduccionBakEnd/issues"
+  },
+  "homepage": "https://github.com/isaacfito07/introduccionBakEnd#readme"
+}
