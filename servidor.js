@@ -18,8 +18,11 @@ http.createServer(function(request, response) {
         '.css': 'text/css',
         '.png': 'image/png',
         '.jpg': 'image/jpg',
-        '.gif': 'image/gif'
+        '.gif': 'image/gif',
+        '.ico': 'image/ico'
     }
+
+    contentType = mimeTypes[extname] || 'application/octect-stream';
 
     fs.readFile(filePath,function(error, content){
         if(error){
@@ -30,7 +33,7 @@ http.createServer(function(request, response) {
                 });
             }else{
                 response.writeHead(500);
-                response.end('Sorry, check with the site admin for error: '+error)
+                response.end('Sorry, check with the site admin for error: '+error+' ..\n')
                 response.end();
             }
         }else{
@@ -38,5 +41,6 @@ http.createServer(function(request, response) {
             response.end(content, 'utf-8');
         }
     });
-    
-});
+
+}).listen(3000);
+console.log('Server running at http://127.0.0.1:3000/');
